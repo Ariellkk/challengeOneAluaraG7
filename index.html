@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChallengeOneEncript</title>
+</head>
+<body>
+    <header>
+        <img id="logoImg" src="../alura_logo.png" alt="logo_Alura">
+    </header>
+    <p class="p__alert" id="p__Copy" hidden>¡Copiado!</p>
+    <p class="p__alert" id="p__error" hidden>El texto solo debe contener letras minúsculas, sin tildes o caracteres especiales.</p>
+    <main class="mainContent">
+        <section class="mainContent__textarea">
+            <div>
+                <textarea id="textatarea__Canvas" placeholder="Ingrese su texto aqui" rows="10" cols="40"></textarea>
+            </div>
+            <div class="label__Img_p">
+                <img id="icono__Excla" src="../Exclamacion_logo.png" alt="">
+                <p>Solo letras minusculas y sin tilde</p>
+            </div>
+            <div class="botones">
+                <button id="Btn__Encrip">Encriptar</button>
+                <button id="Btn__Desemcrip">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mainContent__result">
+            <img id="Img__No_Words" src="../No_words.jpg" alt="imagen_no_hay_palabras">
+            <p id="p__Titulo">Ningún mensaje fue<br> encontrado</p>
+            <p id="p__ShowText">Ingrese el texto que desea encriptar o<br> desencriptar</p>
+            <button id="Btn__copiar" hidden>Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Ariellkk">
+            <img src="../github-logo.png" alt="gitHub logo">
+        </a>
+        <p>Web-page by Ariellkk</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
