@@ -117,6 +117,24 @@ botonDesemcrip.addEventListener("click", (e) => {
     }
 })
 
+// Eventos para Movile
+botonEncrip.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    let textoCodificado = textarea.value;
+    mostrarP.innerHTML = encriptarTxt(textoCodificado);
+    console.log("Texto encriptado: " + mostrarP.innerHTML);
+});
+
+botonDesemcrip.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    let textoAdeCodificar = textarea.value;
+    mostrarP.innerHTML = desencriptarTxt(textoAdeCodificar);
+    if (botonCopiar.hasAttribute("hidden")) {
+        botonCopiar.removeAttribute("hidden");
+    }
+});
+
+
 setInterval(function() {
     isEmpty(textarea);
 },1000);
